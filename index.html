@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="id">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="EduClass - platform e-learning SMA/SMK">
+  <title>EduClass | E-learning SMA/SMK</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="app-shell">
+    <aside class="sidebar" id="sidebar">
+      <a class="brand" href="#" aria-label="EduClass beranda">
+        <span class="brand-mark">E</span>
+        <span><strong>EduClass</strong><small>LEARNING SPACE</small></span>
+      </a>
+      <div class="profile-mini">
+        <div class="avatar">SA</div>
+        <div><strong>Selamat belajar!</strong><small>Siswa • XI</small></div>
+      </div>
+      <nav class="nav-menu" aria-label="Menu utama">
+        <button class="nav-link active" data-view="dashboard"><span>▦</span> Dashboard</button>
+        <button class="nav-link" data-view="materi"><span>▤</span> Materi</button>
+        <button class="nav-link" data-view="kuis"><span>✓</span> Kuis</button>
+        <button class="nav-link" data-view="tugas"><span>▣</span> Tugas</button>
+        <button class="nav-link" data-view="nilai"><span>▥</span> Nilai</button>
+        <button class="nav-link" data-view="absensi"><span>◷</span> Absensi</button>
+        <button class="nav-link" data-view="diskusi"><span>☷</span> Diskusi</button>
+      </nav>
+      <div class="sidebar-bottom">
+        <div class="help-card"><span>✦</span><strong>Terus semangat!</strong><p>Belajar sedikit demi sedikit, hasilnya akan terasa.</p></div>
+        <small class="muted">EduClass • Prototype v1.0</small>
+      </div>
+    </aside>
+
+    <main class="main-area">
+      <header class="topbar">
+        <button class="mobile-menu" id="mobileMenu" aria-label="Buka menu">☰</button>
+        <div class="crumb">Kelas XI <span>/</span> Matematika</div>
+        <div class="top-actions"><span class="status-dot"></span><span class="online-label">Mode demo</span><button class="avatar small" title="Profil siswa">SA</button></div>
+      </header>
+      <div id="appContent" class="content" aria-live="polite"></div>
+      <footer>© 2026 EduClass · Platform pembelajaran SMA/SMK</footer>
+    </main>
+  </div>
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
